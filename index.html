@@ -52,7 +52,13 @@ header{position:sticky;top:0;z-index:10;background:rgba(251,248,244,.92);backdro
 .badge strong{display:block;font-family:Fraunces,serif;font-size:22px;color:var(--brand)}
 .badge.a{left:-6px;bottom:22%}
 .badge.b{right:-6px;top:14%}
-.photo-note{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:12px;color:var(--muted)}
+.visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.badge.a{left:14px}.badge.b{right:14px}
+.card .pic{display:block;width:calc(100% + 52px);margin:-26px -26px 18px;height:190px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0}
+.card{overflow:hidden}
+.band{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.band img{width:100%;height:260px;object-fit:cover;border-radius:var(--radius)}
+@media (max-width:900px){.band{grid-template-columns:1fr}.band img{height:200px}}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
@@ -179,11 +185,10 @@ footer.site b{color:#fff;font-family:Fraunces,serif;font-size:17px;font-weight:6
         <a class="btn ghost" href="#treatments">See treatments</a>
       </div>
     </div>
-    <div class="visual" aria-hidden="true">
-      <div class="ring"></div><div class="ring two"></div>
+    <div class="visual">
+      <img src="images/reception.webp" alt="Calm, sage-green clinic reception with lounge chairs and plants" width="1120" height="1400">
       <div class="badge b"><strong>4.9 ★</strong>381 Google reviews</div>
       <div class="badge a"><strong>Gold Medal</strong>IADVL, 2011</div>
-      <div class="photo-note">Clinic or doctor photo goes here</div>
     </div>
   </div>
 
@@ -205,6 +210,7 @@ footer.site b{color:#fff;font-family:Fraunces,serif;font-size:17px;font-weight:6
       </div>
       <div class="grid">
         <div class="card feature">
+          <img class="pic" src="images/hair.webp" alt="Clinician examining a patient's scalp with a dermoscope" loading="lazy">
           <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c-4 0-7 3-7 7 0 2 1 3 1 5h12c0-2 1-3 1-5 0-4-3-7-7-7z"/><path d="M9 21h6"/><path d="M8 7l1 2M12 6v2M16 7l-1 2"/></svg></div>
           <h3>Hair Transplant</h3>
           <p>Surgical hair restoration for thinning and receding hairlines, planned for natural-looking, lasting results.</p>
@@ -234,6 +240,10 @@ footer.site b{color:#fff;font-family:Fraunces,serif;font-size:17px;font-weight:6
           <h3>Clinical Dermatology</h3>
           <p>Diagnosis and treatment of everyday and long-standing skin conditions, rashes and infections.</p>
         </div>
+      </div>
+      <div class="band">
+        <img src="images/treatment.webp" alt="Bright treatment room with a padded chair and laser device" loading="lazy">
+        <img src="images/skincare.webp" alt="Skincare serums, creams and a facial roller on linen" loading="lazy">
       </div>
     </div>
   </section>
@@ -325,7 +335,7 @@ footer.site b{color:#fff;font-family:Fraunces,serif;font-size:17px;font-weight:6
 <footer class="site">
   <div class="wrap">
     <div><b>Dr. Pratibha Pradhan</b><br>Skin · Hair Transplant · Aesthetics<br>New Town, Kolkata</div>
-    <div>Concept website. Content drawn from the clinic's public Google, Facebook and Instagram profiles.</div>
+    <div>Concept website. Content drawn from the clinic's public Google, Facebook and Instagram profiles. Photos are AI-generated illustrations, not the actual clinic.</div>
   </div>
 </footer>
 
