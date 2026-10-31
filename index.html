@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Pratibha Pradhan | Skin, Hair & Aesthetics, New Town</title>
+<meta name="description" content="Gold-medalist dermatologist and hair transplant surgeon in New Town, Kolkata. Skin, hair and aesthetic care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf8f4; --surface:#ffffff; --ink:#1f2a2a; --muted:#5c6b69;
+  --brand:#2f6f66; --brand-ink:#ffffff; --accent:#c98f6b; --soft:#e8f0ee; --line:#e6e0d8;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.concept{background:#1f2a2a;color:#d8e2e0;font-size:12.5px;text-align:center;padding:6px 16px}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(251,248,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-family:Fraunces,serif;font-size:15px}
+.logo b{font-family:Fraunces,serif;font-size:17px;display:block;line-height:1.1}
+.logo small{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.links{display:flex;gap:26px;font-size:14.5px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:999px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.btn.sm{padding:9px 16px;font-size:14px}
+
+/* hero */
+.hero{padding:64px 0 56px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,54px);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero p{color:var(--muted);font-size:17px;max-width:520px;margin-bottom:26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.visual{position:relative;aspect-ratio:4/5;border-radius:28px;background:
+  radial-gradient(circle at 30% 25%,#f3dccb 0 18%,transparent 19%),
+  radial-gradient(circle at 75% 70%,#cfe2dd 0 26%,transparent 27%),
+  linear-gradient(160deg,#e8f0ee,#f6ece4);overflow:hidden}
+.visual .ring{position:absolute;inset:18%;border:1.5px solid rgba(47,111,102,.35);border-radius:50%}
+.visual .ring.two{inset:30%;border-color:rgba(201,143,107,.45)}
+.badge{position:absolute;background:var(--surface);border-radius:14px;padding:12px 16px;box-shadow:0 10px 30px rgba(31,42,42,.12);font-size:13.5px}
+.badge strong{display:block;font-family:Fraunces,serif;font-size:22px;color:var(--brand)}
+.badge.a{left:-6px;bottom:22%}
+.badge.b{right:-6px;top:14%}
+.photo-note{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:12px;color:var(--muted)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.stat{padding:22px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:Fraunces,serif;font-size:26px;color:var(--brand)}
+.stat span{font-size:13.5px;color:var(--muted)}
+
+section{padding:80px 0}
+.head{max-width:640px;margin-bottom:36px}
+.head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:10px}
+.head p{color:var(--muted)}
+
+/* services */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:16px}
+.ico svg{width:22px;height:22px;stroke:var(--brand);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.card.feature{background:var(--brand);color:#fff;border-color:var(--brand)}
+.card.feature p{color:#d6e7e3}
+.card.feature .ico{background:rgba(255,255,255,.15)}
+.card.feature .ico svg{stroke:#fff}
+
+/* about */
+.about{background:var(--soft)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.portrait{aspect-ratio:1;border-radius:50%;background:linear-gradient(150deg,#fff,#dcebe7);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px;border:10px solid #fff}
+.portrait span{font-family:Fraunces,serif;font-size:64px;color:var(--brand);display:block;line-height:1}
+.creds{list-style:none;margin-top:22px;display:grid;gap:12px}
+.creds li{display:flex;gap:12px;align-items:flex-start}
+.creds li:before{content:"";flex:0 0 10px;height:10px;margin-top:8px;border-radius:50%;background:var(--accent)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why div{border-top:2px solid var(--brand);padding-top:16px}
+.why h3{font-size:18px;margin-bottom:6px}
+.why p{color:var(--muted);font-size:14.5px}
+
+/* reviews */
+.rating{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.rating b{font-family:Fraunces,serif;font-size:48px;color:var(--brand);line-height:1}
+.stars{color:#e0a43b;letter-spacing:2px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+blockquote{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+blockquote p{font-family:Fraunces,serif;font-size:18px;line-height:1.4}
+blockquote footer{font-size:13px;color:var(--muted)}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.panel h3{font-size:22px;margin-bottom:16px}
+.row{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row:last-of-type{border-bottom:0}
+.row b{min-width:96px;color:var(--muted);font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{font-size:12.5px;background:var(--soft);color:var(--brand);padding:6px 10px;border-radius:999px}
+form{display:grid;gap:12px}
+label{font-size:13.5px;color:var(--muted)}
+input,select,textarea{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+.formnote{font-size:13px;color:var(--brand);display:none}
+
+footer.site{background:#1f2a2a;color:#b9c7c4;padding:40px 0;font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer.site b{color:#fff;font-family:Fraunces,serif;font-size:17px;font-weight:600}
+
+.callbar{display:none}
+
+@media (max-width:900px){
+  .links{display:none}
+  .hero{grid-template-columns:1fr;padding:40px 0;gap:32px}
+  .visual{aspect-ratio:16/11}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .grid,.quotes{grid-template-columns:1fr}
+  .about-grid,.visit{grid-template-columns:1fr;gap:28px}
+  .portrait{max-width:220px;margin:0 auto}
+  .why{grid-template-columns:1fr 1fr}
+  section{padding:56px 0}
+  .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;gap:10px;padding:10px 16px;background:var(--surface);border-top:1px solid var(--line);z-index:20}
+  .callbar a{flex:1;justify-content:center}
+  body{padding-bottom:70px}
+}
+@media (max-width:520px){
+  .why{grid-template-columns:1fr}
+  .nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="concept">Concept website prepared for Dr. Pratibha Pradhan's clinic. Not an official site.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mark">PP</span>
+      <span><b>Dr. Pratibha Pradhan</b><small>SKIN · HAIR · AESTHETICS</small></span>
+    </a>
+    <nav class="links">
+      <a href="#treatments">Treatments</a>
+      <a href="#doctor">The Doctor</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn sm" href="#visit">Book appointment</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow">Dermatologist &amp; Hair Transplant Surgeon · New Town</span>
+      <h1>Healthy skin and fuller hair, <em>treated with care.</em></h1>
+      <p>A centre for skin, hair transplant and aesthetics in New Town, Kolkata, led by a gold-medalist dermatologist from JIPMER who takes the time to listen.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+919831876138">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call 098318 76138
+        </a>
+        <a class="btn ghost" href="#treatments">See treatments</a>
+      </div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="ring"></div><div class="ring two"></div>
+      <div class="badge b"><strong>4.9 ★</strong>381 Google reviews</div>
+      <div class="badge a"><strong>Gold Medal</strong>IADVL, 2011</div>
+      <div class="photo-note">Clinic or doctor photo goes here</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>4.9 ★</b><span>from 381 patient reviews</span></div>
+      <div class="stat"><b>MD</b><span>Dermatology, JIPMER Pondicherry</span></div>
+      <div class="stat"><b>Gold Medal</b><span>IADVL, 2011</span></div>
+      <div class="stat"><b>6 days</b><span>Mon to Sat, 9 am to 7 pm</span></div>
+    </div>
+  </div>
+
+  <section id="treatments">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Treatments</span>
+        <h2>Skin, hair and aesthetic care under one roof</h2>
+        <p>From a first consultation for a stubborn rash to a full hair restoration plan, every treatment starts with a clear diagnosis and an honest explanation.</p>
+      </div>
+      <div class="grid">
+        <div class="card feature">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c-4 0-7 3-7 7 0 2 1 3 1 5h12c0-2 1-3 1-5 0-4-3-7-7-7z"/><path d="M9 21h6"/><path d="M8 7l1 2M12 6v2M16 7l-1 2"/></svg></div>
+          <h3>Hair Transplant</h3>
+          <p>Surgical hair restoration for thinning and receding hairlines, planned for natural-looking, lasting results.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M8 8h8l-1 12H9z"/><path d="M10 13h4"/></svg></div>
+          <h3>PRP &amp; Hair Fall Treatment</h3>
+          <p>Platelet-rich plasma therapy and medical treatment plans to slow hair loss and strengthen the scalp.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="13" r="1"/><circle cx="11" cy="15" r="1"/></svg></div>
+          <h3>Acne &amp; Acne Marks</h3>
+          <p>Treatment for active acne and the marks it leaves behind, with routines patients can actually follow.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12c3-4 13-4 16 0"/><path d="M4 12c3 4 13 4 16 0"/></svg></div>
+          <h3>Keloid &amp; Scar Care</h3>
+          <p>Ongoing management for keloids and raised scars, with steady follow-up until they settle.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+          <h3>Laser Hair Removal</h3>
+          <p>Long-term reduction of unwanted hair using laser, done in a clean, comfortable setting.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 2h6v6h6v6h-6v6H9v-6H3V8h6z"/></svg></div>
+          <h3>Clinical Dermatology</h3>
+          <p>Diagnosis and treatment of everyday and long-standing skin conditions, rashes and infections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctor" class="about">
+    <div class="wrap about-grid">
+      <div class="portrait"><div><span>PP</span>Doctor's portrait</div></div>
+      <div>
+        <span class="eyebrow">Meet the doctor</span>
+        <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:14px">Dr. Pratibha Pradhan, MD</h2>
+        <p style="color:var(--muted)">Dr. Pradhan completed her post-graduation in dermatology at JIPMER, Pondicherry, one of India's most respected medical institutes. Her clinic in New Town is dedicated to skin, hair transplant and aesthetics, and patients return for years because she listens first and explains every step.</p>
+        <ul class="creds">
+          <li>MD (Dermatology), JIPMER, Pondicherry</li>
+          <li>Gold Medal, Indian Association of Dermatology, Venereology and Leprology (2011)</li>
+          <li>Dermatologist and hair transplant surgeon</li>
+          <li>Women-owned practice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Why patients choose us</span>
+        <h2>What 381 reviews keep mentioning</h2>
+      </div>
+      <div class="why">
+        <div><h3>She listens</h3><p>Patients say concerns are heard patiently and treatment is explained in simple terms.</p></div>
+        <div><h3>Results that last</h3><p>From acne to keloids to hair transplants, reviewers describe treatment that actually works.</p></div>
+        <div><h3>On-time appointments</h3><p>A well-run clinic that respects your time, with appointments recommended.</p></div>
+        <div><h3>Clean &amp; welcoming</h3><p>A hygienic, comfortable space that is LGBTQ+ friendly and wheelchair accessible.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Patient reviews</span>
+        <h2>Trusted by patients across New Town</h2>
+      </div>
+      <div class="rating">
+        <b>4.9</b>
+        <div><div class="stars">★★★★★</div><span style="color:var(--muted);font-size:14px">Based on 381 Google reviews</span></div>
+      </div>
+      <div class="quotes">
+        <blockquote><p>"Truly life-changing, and I'm extremely satisfied!"</p><footer>Ritam B. · Hair transplant · Google review</footer></blockquote>
+        <blockquote><p>"The appointments are always on time… and the care is top-notch."</p><footer>Sajid P. · Google review</footer></blockquote>
+        <blockquote><p>"I have been seeing Ma'am for past 3 years… she is my only saviour."</p><footer>Puspita B. · Google review</footer></blockquote>
+        <blockquote><p>"She listens carefully, explains the treatment clearly."</p><footer>Piyanshu S. · Google review</footer></blockquote>
+        <blockquote><p>"…the keloid treatment is now much better than before… thank u ma'am"</p><footer>Sk Shabnam · Google review</footer></blockquote>
+        <blockquote><p>"Calm, professional, and suggested the right treatment."</p><footer>Biswapriyo T. · Google review</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap visit">
+      <div class="panel">
+        <h3>Visit the clinic</h3>
+        <div class="row"><b>Address</b><span>1st Floor, Vani Heights, DE-89, Street 324, DE Block, Action Area 1D, New Town, Kolkata 700156</span></div>
+        <div class="row"><b>Hours</b><span>Mon to Sat, 9:00 am to 7:00 pm<br>Sunday closed</span></div>
+        <div class="row"><b>Phone</b><span><a href="tel:+919831876138">098318 76138</a></span></div>
+        <div class="row"><b>Payments</b><span>Debit cards, NFC / tap-to-pay</span></div>
+        <div class="tags"><span>Appointments recommended</span><span>Women-owned</span><span>LGBTQ+ friendly</span><span>Wheelchair-accessible seating</span></div>
+        <div class="cta" style="margin-top:22px">
+          <a class="btn sm" href="https://www.google.com/maps/place/?q=place_id:ChIJ6-5O2ZJ1AjoRM0f3cfVgXt0" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn sm ghost" href="tel:+919831876138">Call now</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Request an appointment</h3>
+        <form onsubmit="event.preventDefault();document.getElementById('fn').style.display='block';this.reset();">
+          <div><label for="n">Your name</label><input id="n" required></div>
+          <div><label for="p">Phone number</label><input id="p" type="tel" required></div>
+          <div><label for="t">Treatment</label>
+            <select id="t"><option>Hair transplant</option><option>PRP / Hair fall</option><option>Acne &amp; marks</option><option>Keloid / scars</option><option>Laser hair removal</option><option>Other skin concern</option></select>
+          </div>
+          <div><label for="m">Anything we should know?</label><textarea id="m"></textarea></div>
+          <button class="btn" type="submit">Send request</button>
+          <p class="formnote" id="fn">Demo only. In the live site, this request goes straight to the clinic on WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><b>Dr. Pratibha Pradhan</b><br>Skin · Hair Transplant · Aesthetics<br>New Town, Kolkata</div>
+    <div>Concept website. Content drawn from the clinic's public Google, Facebook and Instagram profiles.</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+919831876138">Call clinic</a>
+  <a class="btn ghost" href="#visit">Book</a>
+</div>
+</body>
+</html>
